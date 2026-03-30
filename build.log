@@ -1,0 +1,347 @@
+make[1]: Entering directory '/workspaces/186_kernel/out'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  SYSHDR  arch/arm/include/generated/uapi/asm/unistd-common.h
+  SYSHDR  arch/arm/include/generated/uapi/asm/unistd-oabi.h
+  SYSHDR  arch/arm/include/generated/uapi/asm/unistd-eabi.h
+  CHK     include/config/kernel.release
+  UPD     include/config/kernel.release
+  GEN     ./Makefile
+  WRAP    arch/arm/include/generated/uapi/asm/bitsperlong.h
+  WRAP    arch/arm/include/generated/uapi/asm/errno.h
+  WRAP    arch/arm/include/generated/uapi/asm/ioctl.h
+  WRAP    arch/arm/include/generated/uapi/asm/ipcbuf.h
+  WRAP    arch/arm/include/generated/uapi/asm/msgbuf.h
+  WRAP    arch/arm/include/generated/uapi/asm/param.h
+  WRAP    arch/arm/include/generated/uapi/asm/resource.h
+  WRAP    arch/arm/include/generated/uapi/asm/poll.h
+  WRAP    arch/arm/include/generated/uapi/asm/sembuf.h
+  WRAP    arch/arm/include/generated/uapi/asm/siginfo.h
+  WRAP    arch/arm/include/generated/uapi/asm/shmbuf.h
+  WRAP    arch/arm/include/generated/uapi/asm/socket.h
+  WRAP    arch/arm/include/generated/uapi/asm/sockios.h
+  WRAP    arch/arm/include/generated/uapi/asm/termbits.h
+  WRAP    arch/arm/include/generated/uapi/asm/termios.h
+  CHK     include/generated/uapi/linux/version.h
+  UPD     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+  HOSTCC  scripts/basic/bin2c
+  Using .. as source for kernel
+  WRAP    arch/arm/include/generated/asm/clkdev.h
+  WRAP    arch/arm/include/generated/asm/current.h
+  WRAP    arch/arm/include/generated/asm/early_ioremap.h
+  WRAP    arch/arm/include/generated/asm/emergency-restart.h
+  WRAP    arch/arm/include/generated/asm/exec.h
+  WRAP    arch/arm/include/generated/asm/extable.h
+  WRAP    arch/arm/include/generated/asm/irq_regs.h
+  WRAP    arch/arm/include/generated/asm/kdebug.h
+  WRAP    arch/arm/include/generated/asm/local.h
+  WRAP    arch/arm/include/generated/asm/local64.h
+  WRAP    arch/arm/include/generated/asm/mm-arch-hooks.h
+  WRAP    arch/arm/include/generated/asm/msi.h
+  WRAP    arch/arm/include/generated/asm/parport.h
+  WRAP    arch/arm/include/generated/asm/preempt.h
+  WRAP    arch/arm/include/generated/asm/rwsem.h
+  WRAP    arch/arm/include/generated/asm/seccomp.h
+  WRAP    arch/arm/include/generated/asm/segment.h
+  WRAP    arch/arm/include/generated/asm/serial.h
+  WRAP    arch/arm/include/generated/asm/simd.h
+  WRAP    arch/arm/include/generated/asm/sizes.h
+  WRAP    arch/arm/include/generated/asm/timex.h
+  WRAP    arch/arm/include/generated/asm/trace_clock.h
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/dtc/flattree.o
+  HOSTCC  scripts/genksyms/genksyms.o
+  HOSTCC  scripts/dtc/fstree.o
+  SHIPPED scripts/genksyms/parse.tab.c
+  SHIPPED scripts/genksyms/lex.lex.c
+  SHIPPED scripts/genksyms/parse.tab.h
+  HOSTCC  scripts/genksyms/parse.tab.o
+  HOSTCC  scripts/dtc/data.o
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/genksyms/lex.lex.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTLD  scripts/genksyms/genksyms
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  HOSTCC  scripts/mod/mk_elfconfig
+kperfmon_DUMMY="CONFIG_KPERFMON is off."
+kperfmon_DUMMY="olog.pb.h file is missing... retrying"
+cp: cannot stat '../../../frameworks/base/proto/src/olog.proto': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat '../../../vendor/samsung/system/libperflog/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat '../../frameworks/base/proto/src/olog.proto': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat '../../vendor/samsung/system/libperflog/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+  CC      scripts/mod/devicetable-offsets.s
+chmod: cannot access '../drivers/kperfmon/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+make[3]: ../drivers/kperfmon/aprotoc: No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat '../drivers/kperfmon/olog.pb.h': No such file or directory
+kperfmon_DUMMY=""
+kperfmon_DUMMY="olog.pb.h file is missing... again"
+cp: cannot stat '../../../system/core/liblog/include/log/perflog.h': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat '../../system/core/liblog/include/log/perflog.h': No such file or directory
+kperfmon_DUMMY=""
+  HOSTCC  scripts/selinux/mdp/mdp
+kperfmon_DUMMY="perflog.h file is missing."
+  HOSTCC  scripts/dtc/util.o
+  MKELF   scripts/mod/elfconfig.h
+  CHK     scripts/mod/devicetable-offsets.h
+  UPD     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/sumversion.o
+  HOSTCC  scripts/kallsyms
+  SHIPPED scripts/dtc/dtc-lexer.lex.c
+  SHIPPED scripts/dtc/dtc-parser.tab.h
+  SHIPPED scripts/dtc/dtc-parser.tab.c
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  SYSNR   arch/arm/include/generated/asm/unistd-nr.h
+  GEN     arch/arm/include/generated/asm/mach-types.h
+  SYSTBL  arch/arm/include/generated/calls-oabi.S
+  HOSTLD  scripts/dtc/dtc
+  SYSTBL  arch/arm/include/generated/calls-eabi.S
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/sortextable
+  CC      kernel/bounds.s
+  HOSTCC  scripts/asn1_compiler
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/timeconst.h
+  UPD     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  HOSTCC  scripts/extract-cert
+  UPD     include/generated/bounds.h
+  CC      arch/arm/kernel/asm-offsets.s
+  CHK     include/generated/asm-offsets.h
+  UPD     include/generated/asm-offsets.h
+  CALL    ../scripts/checksyscalls.sh
+  CC      init/main.o
+  HOSTCC  usr/gen_init_cpio
+..
+..
+..
+..
+cameraisp drv by platform 
+  GEN     usr/initramfs_data.cpio
+..
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.o
+  CHK     include/generated/compile.h
+  CC      arch/arm/vfp/vfpmodule.o
+  UPD     include/generated/compile.h
+  CC      init/do_mounts.o
+$CONFIG_MTK_COMBO_CHIP is ["CONSYS_6739"]
+MTK_PLATFORM_ID is [6739]
+WIFI_IP_SET is 1
+including gen2 driver
+FM_CHIP_ID is [6739]
+CFG_FM_CHIP_ID is [6739]
+CFG_FM_CHIP is [mt6627]
+CFG_BUILD_CONNAC2 is [false]
+../drivers/misc/mediatek/connectivity/bt/Makefile:30: yumin: bt 1
+../drivers/misc/mediatek/connectivity/bt/Makefile:35: yumin: bt 2
+../drivers/misc/mediatek/connectivity/wmt_chrdev_wifi/Makefile:53: wmt_chrdev_wifi build-in boot.img
+../drivers/misc/mediatek/connectivity/wmt_drv/Makefile:46: yumin: common 1
+../drivers/misc/mediatek/connectivity/wmt_drv/Makefile:48: yumin: common 2
+../drivers/misc/mediatek/connectivity/wmt_drv/Makefile:113: wmt_drv build-in boot.img
+  AS      arch/arm/vfp/entry.o
+  AS      arch/arm/vfp/vfphw.o
+  CC      arch/arm/vfp/vfpsingle.o
+MTK_GPU_VERSION 1 = rgx
+*MTK_GPU_VERSION = rgx auckland 1.8ED
+[GPU_DEBUG] MTK_PLATFORM = mt6739
+imgsensor drv by platform imx258_mipi_raw/ gc02m1_mipi_raw/
+imgsensor drv by project gc5035_mipi_raw/
+  CC      init/do_mounts_rd.o
+  CC      arch/arm/vfp/vfpdouble.o
+  CC      init/do_mounts_initrd.o
+  AR      arch/arm/vfp/vfp.o
+  AR      arch/arm/vfp/built-in.o
+  CC      init/noinitramfs.o
+  CC      init/initramfs.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+  LDS     arch/arm/vdso/vdso.lds
+  CC      arch/arm/vdso/vgettimeofday.o
+  CC      arch/arm/kernel/elf.o
+  CC      init/version.o
+  AS      arch/arm/vdso/datapage.o
+  HOSTCC  arch/arm/vdso/vdsomunge
+  VDSO    arch/arm/vdso/vdso.so.raw
+  MUNGE   arch/arm/vdso/vdso.so.dbg
+TCORE_UT_TESTS_SUPPORT = n
+TCORE_PROFILING_SUPPORT = n
+TCORE_PROFILING_AUTO_DUMP = n
+TCORE_MEMORY_LEAK_DETECTION_SUPPORT = n
+  AS      arch/arm/kernel/entry-common.o
+  OBJCOPY arch/arm/vdso/vdso.so
+  AS      arch/arm/vdso/vdso.o
+  CC      arch/arm/kernel/irq.o
+  AR      arch/arm/vdso/built-in.o
+  AR      init/mounts.o
+  AR      init/built-in.o
+  CC      arch/arm/mm/extable.o
+  CC      arch/arm/kernel/opcodes.o
+  CC      arch/arm/mm/fault.o
+  CC      arch/arm/common/firmware.o
+  CC      arch/arm/kernel/process.o
+  AR      arch/arm/common/built-in.o
+  CC      arch/arm/mm/init.o
+  CC      arch/arm/mm/iomap.o
+  CC      arch/arm/kernel/ptrace.o
+  CC      arch/arm/probes/decode.o
+  CC      arch/arm/mm/dma-mapping.o
+  CC      arch/arm/probes/decode-arm.o
+  CC      arch/arm/net/bpf_jit_32.o
+  CC      arch/arm/kernel/reboot.o
+  CC      arch/arm/probes/uprobes/core.o
+  CC      arch/arm/mm/fault-armv.o
+  CC      arch/arm/probes/uprobes/actions-arm.o
+  CC      arch/arm/kernel/return_address.o
+  AR      arch/arm/probes/uprobes/built-in.o
+  AR      arch/arm/probes/built-in.o
+  SHIPPED arch/arm/crypto/sha256-core.S
+  CC      arch/arm/crypto/sha256_glue.o
+  CC      arch/arm/mm/flush.o
+  CC      arch/arm/kernel/setup.o
+  CC      arch/arm/crypto/sha256_neon_glue.o
+  CC      arch/arm/mm/idmap.o
+  SHIPPED arch/arm/crypto/sha512-core.S
+  CC      arch/arm/crypto/sha512-glue.o
+  CC      arch/arm/mm/ioremap.o
+  AR      arch/arm/net/built-in.o
+  AR      arch/arm/firmware/built-in.o
+  CC      arch/arm/kernel/signal.o
+  CC      arch/arm/crypto/sha512-neon-glue.o
+  CC      arch/arm/mm/mmap.o
+  CC      arch/arm/mm/pgd.o
+  AS      arch/arm/crypto/aes-ce-core.o
+  AS      arch/arm/kernel/sigreturn_codes.o
+  CC      arch/arm/crypto/aes-ce-glue.o
+  CC      arch/arm/kernel/stacktrace.o
+  CC      arch/arm/mm/mmu.o
+  AS      arch/arm/crypto/sha2-ce-core.o
+  CC      arch/arm/kernel/sys_arm.o
+  CC      kernel/fork.o
+  CC      arch/arm/crypto/sha2-ce-glue.o
+  CC      arch/arm/kernel/time.o
+  AS      arch/arm/crypto/sha256-core.o
+  AS      arch/arm/crypto/sha512-core.o
+  AR      arch/arm/crypto/aes-arm-ce.o
+  AR      arch/arm/crypto/sha2-arm-ce.o
+  AR      arch/arm/crypto/sha256-arm.o
+  AR      arch/arm/crypto/sha512-arm.o
+  AR      arch/arm/crypto/built-in.o
+  CC      certs/system_keyring.o
+  CC      arch/arm/kernel/traps.o
+  CC      arch/arm/mm/pageattr.o
+  EXTRACT_CERTS   
+  AS      certs/system_certificates.o
+  AR      certs/built-in.o
+  CC      arch/arm/mm/gup.o
+  CC      mm/filemap.o
+  CC      arch/arm/mm/proc-syms.o
+  CC      arch/arm/kernel/atags_parse.o
+  CC      arch/arm/mm/alignment.o
+  CC      kernel/exec_domain.o
+  AS      arch/arm/kernel/entry-armv.o
+  CC      arch/arm/kernel/bugs.o
+  CC      arch/arm/kernel/cpuidle.o
+  CC      kernel/panic.o
+  CC      arch/arm/mm/highmem.o
+  CC      arch/arm/kernel/armksyms.o
+  AS      arch/arm/mm/abort-ev7.o
+  AS      arch/arm/mm/pabort-v7.o
+  AS      arch/arm/mm/cache-v7.o
+  CC      arch/arm/kernel/module.o
+  AS      arch/arm/mm/cache-mtk-v8.o
+  CC      kernel/cpu.o
+  CC      arch/arm/mm/copypage-v6.o
+  CC      mm/mempool.o
+  CC      arch/arm/mm/context.o
+  CC      arch/arm/kernel/module-plts.o
+  AS      arch/arm/mm/tlb-v7.o
+  AS      arch/arm/kernel/sleep.o
+  AS      arch/arm/mm/proc-v7.o
+  CC      arch/arm/kernel/suspend.o
+  CC      arch/arm/mm/proc-v7-bugs.o
+  CC      arch/arm/mm/l2c-common.o
+  CC      arch/arm/mm/cache-l2x0.o
+  CC      mm/oom_kill.o
+  CC      arch/arm/kernel/smp.o
+  CC      kernel/exit.o
+  AS      arch/arm/mm/l2c-l2x0-resume.o
+  AS      arch/arm/mm/cache-mtk-v7.o
+  AR      arch/arm/mm/built-in.o
+  CC      fs/open.o
+  CC      arch/arm/kernel/smp_tlb.o
+  CC      arch/arm/kernel/arch_timer.o
+  CC      mm/maccess.o
+  CC      arch/arm/kernel/unwind.o
+  CC      arch/arm/kernel/devtree.o
+  CC      mm/page_alloc.o
+  CC      fs/read_write.o
+  CC      kernel/softirq.o
+  CC      arch/arm/kernel/swp_emulate.o
+  CC      arch/arm/kernel/hw_breakpoint.o
+  CC      kernel/resource.o
+  CC      arch/arm/kernel/perf_regs.o
+  CC      fs/file_table.o
+  CC      arch/arm/kernel/perf_callchain.o
+  CC      kernel/sysctl.o
+  CC      arch/arm/kernel/perf_event_xscale.o
+  CC      arch/arm/kernel/perf_event_v6.o
+  CC      arch/arm/kernel/perf_event_v7.o
+  CC      fs/super.o
+  CC      mm/page-writeback.o
+  CC      arch/arm/kernel/topology.o
+  CC      fs/char_dev.o
+  CC      arch/arm/kernel/vdso.o
+  CC      kernel/sysctl_binary.o
+  CC      arch/arm/kernel/io.o
+  AS      arch/arm/kernel/hyp-stub.o
+  CC      arch/arm/kernel/psci_smp.o
+  CC      fs/stat.o
+  AS      arch/arm/kernel/smccc-call.o
+  AS      arch/arm/kernel/head.o
+  CC      kernel/capability.o
+  LDS     arch/arm/kernel/vmlinux.lds
+  AR      arch/arm/kernel/built-in.o
+  AR      ipc/built-in.o
+  CC      security/integrity/iint.o
+  CC      mm/readahead.o
+  CC      fs/exec.o
+  CC      security/integrity/integrity_audit.o
+  CC      kernel/ptrace.o
+  AR      security/integrity/integrity.o
+  AR      security/integrity/built-in.o
+  CC      security/keys/gc.o
+  CC      security/keys/key.o
+  CC      mm/swap.o
+  CC      kernel/user.o
+  CC      security/keys/keyring.o
+  CC      fs/pipe.o
+  CC      kernel/signal.o
+  CC      mm/truncate.o
+  CC      security/keys/keyctl.o
+  CC      fs/namei.o
+  CC      mm/vmscan.o
+  CC      security/keys/permission.o
+  CC      kernel/sys.o
+  CC      security/keys/process_keys.o
+  CC      security/keys/request_key.o
+  CC      fs/fcntl.o
+  CC      security/keys/request_key_auth.o
+  CC      kernel/umh.o
+  CC      mm/shmem.o
+  CC      security/keys/user_defined.o
+  CC      fs/ioctl.o
+  CC      kernel/workqueue.o
