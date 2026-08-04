@@ -15,6 +15,7 @@
 #include <linux/device.h>
 #include <linux/module.h>
 #include <linux/kernel.h>
+#include <linux/math64.h>
 #include <linux/err.h>
 #include <linux/kdev_t.h>
 #include <linux/slab.h>
@@ -253,20 +254,24 @@ static int get_speed_str(u64 speed, char buf[], int size)
 	int ret;
 	u64 rem;
 
-	if (speed >= 1000000000LL) {
+	if (speed >= 1000000000ULL) {
 #ifdef __LP64__
-		speed = speed / 1000000LL;
+		speed = speed / 1000000ULL;
 #else
-		speed = do_div(speed, 1000000LL);
+		speed = div_u64(speed, 1000000U);
 #endif
-		rem = do_div(speed, 1000);
+		rem = div_u64(speed, 1000U);
 		ret = snprintf(buf, size, "%llu.%03lluGbps", speed, rem);
-	} else if (speed >= 1000000LL) {
-		speed = speed / 1000LL;
-		rem = do_div(speed, 1000);
+	} else if (speed >= 1000000ULL) {
+#ifdef __LP64__
+		speed = speed / 1000ULL;
+#else
+		speed = div_u64(speed, 1000U);
+#endif
+		rem = div_u64(speed, 1000U);
 		ret = snprintf(buf, size, "%llu.%03lluMbps", speed, rem);
-	} else if (speed >= 1000LL) {
-		rem = do_div(speed, 1000);
+	} else if (speed >= 1000ULL) {
+		rem = div_u64(speed, 1000U);
 		ret = snprintf(buf, size, "%llu.%03lluKbps", speed, rem);
 	} else
 		ret = snprintf(buf, size, "%llubps", speed);
@@ -292,10 +297,10 @@ static u64 speed_caculate(u64 delta, struct speed_mon *mon)
 
 	curr_byte = mon->curr_bytes;
 #ifdef __LP64__
-	speed = (curr_byte - mon->ref_bytes) * 8000000000LL / delta;
+	speed = (curr_byte - mon->ref_bytes) * 8000000000ULL / delta;
 #else
-	tmp = (curr_byte - mon->ref_bytes) * 8000000000LL;
-	speed = do_div(tmp, delta);
+	tmp = (curr_byte - mon->ref_bytes) * 8000000000ULL;
+	speed = div_u64(tmp, (u32)delta);
 #endif
 	mon->ref_bytes = curr_byte;
 
